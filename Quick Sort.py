@@ -9,7 +9,7 @@ def Partition(array,start,ends):
    pivot=array[ends]
    index=start
    for i in range(start,len(array)-1):
-       if array[i]<=pivot:
+       if array[i]<pivot:
            array[index],array[i]=array[i],array[index]
            index+=1
    array[index],array[ends]=array[ends],array[index]
